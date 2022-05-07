@@ -1,3 +1,9 @@
+# React Jest Testing Practice
+
+Thanks for checking out this repository. I am using it to further my knowledge of React Jest Testing. Thanks to the YouTube Channel Kris Foster (https://www.youtube.com/watch?v=ML5egqL3YFE) for the help.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
