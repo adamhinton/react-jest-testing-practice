@@ -1,5 +1,6 @@
 import { render, screen, cleanup } from "@testing-library/react";
+import Todo from "../Todo";
 
-test("test", () => {
-  expect(true).toBe(true);
+test("should render todo component", () => {
+  render(<Todo />);
 });
