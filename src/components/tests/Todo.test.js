@@ -1,6 +1,10 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import Todo from "../Todo";
 
+afterEach(() => {
+  cleanup();
+});
+
 test("[1] should render non-completed Todo component", () => {
   const todo = { id: 1, title: "wash dishes", completed: false };
 
