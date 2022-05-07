@@ -1,5 +1,6 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import Todo from "../Todo";
+// import rer
 
 afterEach(() => {
   cleanup();
@@ -13,9 +14,10 @@ test("[1] should render non-completed Todo component", () => {
   const todoElement = screen.getByTestId("todo-1");
   expect(todoElement).toBeInTheDocument();
   expect(todoElement).toHaveTextContent("wash dishes");
+  expect(todoElement).not.toContainHTML("<strike>");
 });
 
-test("[2] should render non-completed Todo component", () => {
+test("[2] should render non-completed Tocdo component", () => {
   const todo = { id: 2, title: "wash car", completed: true };
 
   render(<Todo todo={todo} />);
