@@ -10,7 +10,9 @@ function App() {
 
   return (
     <div className="App">
-      <Todo />
+      {todos.map((todo) => {
+        return <Todo todo={todo} />;
+      })}
     </div>
   );
 }
