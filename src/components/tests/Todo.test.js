@@ -30,4 +30,7 @@ test("[2] should render non-completed Tocdo component", () => {
 test("matches snapshot", () => {
   const todo = { id: 1, title: "wash dishes", completed: false };
   const tree = renderer.create(<Todo todo={todo} />).toJSON();
+  console.log("tree:", tree);
+
+  expect(tree).toMatchSnapshot();
 });
