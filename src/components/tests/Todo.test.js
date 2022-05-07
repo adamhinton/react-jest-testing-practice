@@ -27,4 +27,7 @@ test("[2] should render non-completed Tocdo component", () => {
   expect(todoElement).toHaveTextContent("wash car");
 });
 
-console.log("renderer:", renderer);
+test("matches snapshot", () => {
+  const todo = { id: 1, title: "wash dishes", completed: false };
+  const tree = renderer.create(<Todo todo={todo} />).toJSON();
+});
