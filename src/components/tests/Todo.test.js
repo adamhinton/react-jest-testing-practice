@@ -32,5 +32,6 @@ test("matches snapshot", () => {
   const tree = renderer.create(<Todo todo={todo} />).toJSON();
   console.log("tree:", tree);
 
+  //This goes off the currently saved snapshot.  If you want a different snapshot you'd have to update the snapshot by running u in the terminal after npm test.
   expect(tree).toMatchSnapshot();
 });
