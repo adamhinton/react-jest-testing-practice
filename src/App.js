@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       {todos.map((todo) => {
-        return <Todo todo={todo} />;
+        return <Todo todo={todo} key={todo.id} />;
       })}
     </div>
   );
