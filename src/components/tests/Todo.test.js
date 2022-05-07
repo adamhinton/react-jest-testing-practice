@@ -1,6 +1,6 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import Todo from "../Todo";
-// import rer
+import renderer from "react-test-renderer";
 
 afterEach(() => {
   cleanup();
@@ -26,3 +26,5 @@ test("[2] should render non-completed Tocdo component", () => {
   expect(todoElement).toBeInTheDocument();
   expect(todoElement).toHaveTextContent("wash car");
 });
+
+console.log("renderer:", renderer);
